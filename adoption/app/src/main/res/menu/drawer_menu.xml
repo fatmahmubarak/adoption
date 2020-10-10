@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_action_home"
+           />
+
+        <item
+            android:id="@+id/work"
+            android:title="work"
+            android:icon="@drawable/ic_action_work"
+            />
+
+        <item
+            android:id="@+id/school"
+            android:title="school"
+            android:icon="@drawable/ic_action_hospital"
+            />
+
+         <item android:title="More">
+             <menu>
+                 <item
+                     android:id="@+id/Call"
+                     android:title="call"
+                     android:icon="@drawable/ic_action_call"/>
+
+
+                 <item
+                     android:id="@+id/Setting"
+                     android:title="setting"
+                     android:icon="@drawable/ic_action_setting"/>
+
+             </menu>
+         </item>
+
+
+    </group>
+
+</menu>
