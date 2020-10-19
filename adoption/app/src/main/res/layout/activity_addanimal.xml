@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addanimal"
+   >
+
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageVIewAdd"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="62dp"-->
+<!--        android:layout_marginLeft="100dp"-->
+<!--        android:layout_marginEnd="61dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/imageg" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageVIewAdd"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="510dp"
+        android:gravity="center"
+        android:src="@drawable/imageg"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btnUpload"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="333dp">
+
+        <EditText
+            android:id="@+id/inputTyep"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/inputImageName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="النوع"
+            android:background="@drawable/image"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/inputImageName"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="اسم حيوانك الاليف"
+            android:background="@drawable/image"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btnUpload"
+        android:layout_marginBottom="257dp">
+
+
+        <EditText
+            android:id="@+id/inputage"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/inputImageName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="عمر حيوانك بالاشهر"
+            android:background="@drawable/image"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/inputStrainanimal"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageVIewAdd"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="السلالة"
+            android:background="@drawable/image"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btnUpload"
+        android:layout_marginBottom="180dp">
+
+        <EditText
+            android:id="@+id/inputSexanimal"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/inputImageName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="30dp"
+            android:hint="الجنس "
+            android:background="@drawable/image"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/coloranimal"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/inputImageName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="30dp"
+            android:hint="لون حيوانك الاليف"
+            android:background="@drawable/image"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btnUpload"
+        android:layout_marginBottom="99dp">
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/inputImageName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="30dp"
+            android:hint="ايميلك"
+            android:background="@drawable/image"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/inputSterile"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/inputImageName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="30dp"
+            android:hint="هل حيوانك معقم"
+            android:background="@drawable/image"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewProgress"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="147dp"
+        android:gravity="center"
+        android:text="0.0%"
+        android:textColor="#87431d"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/btnlogin"
+        android:text="اضافة"
+        android:textColor="@color/whiteColor"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewProgress"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="-43dp"
+        android:progressTint="#Dbcbbd" />
+
+</RelativeLayout>
