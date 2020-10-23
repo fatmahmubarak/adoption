@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PageAnimal">
+    tools:context=".PageAnimal"
+    android:background="#a3d8f4"
+    >
 
 
     <!--    <ImageView-->
@@ -23,21 +25,32 @@
 <!--        -->
 <!--        />-->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/pageemail"
+        >
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/image_single_view_Activity"
-        android:layout_width="159dp"
-        android:layout_height="187dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="121dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="500dp"
-        android:gravity="center"
-        android:src="@drawable/animal"
-        app:civ_border_color="#ffffff"
-        app:civ_border_width="1dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_single_view_Activity"
+            android:layout_width="197dp"
+            android:layout_height="196dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="31dp"
+            android:gravity="center"
+            android:src="@drawable/animal"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="1dp" />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +66,7 @@
             android:layout_height="50dp"
             android:gravity="center"
             android:text="Type"
-            android:textColor="@color/blackColor"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:fontFamily="@font/decotype_thuluth"
           />
@@ -65,7 +78,7 @@
             android:layout_alignTop="@+id/textView2_single_view_activity"
             android:gravity="center"
             android:text="name animal"
-            android:textColor="@color/blackColor"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:fontFamily="@font/decotype_thuluth"
 
@@ -89,7 +102,7 @@
             android:layout_height="50dp"
             android:gravity="center"
             android:text="age animal"
-            android:textColor="@color/blackColor"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:fontFamily="@font/decotype_thuluth"
            />
@@ -100,7 +113,7 @@
             android:layout_height="50dp"
             android:gravity="center"
             android:text="Strainanimal"
-            android:textColor="@color/blackColor"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:fontFamily="@font/decotype_thuluth"
            />
@@ -108,34 +121,31 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="74dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="232dp"
-        android:orientation="horizontal"
+        android:layout_marginBottom="228dp"
         android:gravity="center"
-        >
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView5_single_view_activity"
             android:layout_width="200dp"
             android:layout_height="50dp"
+            android:fontFamily="@font/decotype_thuluth"
             android:gravity="center"
             android:text="Sexanimal"
-            android:textColor="@color/blackColor"
-            android:textSize="30dp"
-            android:fontFamily="@font/decotype_thuluth"
-            />
+            android:textColor="@color/white"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textView3_single_view_activity"
             android:layout_width="200dp"
             android:layout_height="50dp"
+            android:fontFamily="@font/decotype_thuluth"
             android:gravity="center"
             android:text="color animal"
-            android:textColor="@color/blackColor"
-            android:textSize="30dp"
-            android:fontFamily="@font/decotype_thuluth"
-          />
+            android:textColor="@color/white"
+            android:textSize="30dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -153,7 +163,7 @@
             android:layout_height="50dp"
             android:gravity="center"
             android:text="Emale"
-            android:textColor="@color/blackColor"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:fontFamily="@font/decotype_thuluth"
            />
@@ -164,7 +174,7 @@
             android:layout_height="50dp"
             android:gravity="center"
             android:text="Sterile"
-            android:textColor="@color/blackColor"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:fontFamily="@font/decotype_thuluth"
             />
@@ -174,7 +184,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"

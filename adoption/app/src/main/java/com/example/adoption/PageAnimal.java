@@ -63,14 +63,14 @@ public class PageAnimal extends AppCompatActivity {
                 String Type = dataSnapshot.child("type").getValue().toString();
                 String Email = dataSnapshot.child("Email").getValue().toString();
                 Picasso.get().load(ImageUrl).into(imageView);
-                textView.setText(animalName);
-                textView2.setText(Ageanimal);
-                textView3.setText(color);
-                textView4.setText(Strainanimal);
-                textView5.setText(Sexanimal);
-                textView6.setText(Sterile);
-                textView7.setText(Type);
-                textView8.setText(Email);
+                textView.setText("الاسم:"+" "+animalName);
+                textView2.setText("العمر:"+" "+Ageanimal);
+                textView3.setText("اللون:"+" "+color);
+                textView4.setText("السلاله:"+" "+Strainanimal);
+                textView5.setText("النوع:"+" "+Sexanimal);
+                textView6.setText("معقمه:"+" "+Sterile);
+                textView7.setText("النوع:"+" "+Type);
+                textView8.setText("الايمبل:"+" "+Email);
             }
            }
 

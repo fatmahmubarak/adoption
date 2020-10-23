@@ -17,6 +17,29 @@
 <!--    android:layout_marginTop="60dp"-->
 <!--    />-->
 
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="518dp"
+        android:src="@drawable/animation2" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="105dp"
+        android:layout_height="97dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="265dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="543dp"
+        android:src="@drawable/cat3" />
+
     <EditText
         android:id="@+id/inputSearch"
         android:layout_width="match_parent"
@@ -49,9 +72,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylerView"
         android:layout_width="match_parent"
-        android:layout_height="572dp"
+        android:layout_height="578dp"
         android:layout_below="@+id/inputSearch"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="98dp"
         android:animation="@anim/fade_transition_animation"
         android:background="@drawable/adapterhomepage"
         android:padding="10dp"

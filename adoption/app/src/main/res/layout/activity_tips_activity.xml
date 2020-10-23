@@ -4,7 +4,9 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Tips_activity">
+        tools:context=".Tips_activity"
+    android:background="#b2deec"
+    >
 
 
     <pl.droidsonroids.gif.GifImageView
@@ -33,10 +35,12 @@
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/decotype_thuluth"
         android:padding="5dp"
-        android:text="Name appear here"
+        android:text="Name"
         android:textAlignment="center"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -63,11 +67,10 @@
             android:layout_marginEnd="17dp"
             android:fontFamily="@font/decotype_thuluth"
             android:padding="5dp"
-            android:scrollbars="vertical"
             android:text="Role appear here"
             android:textAlignment="center"
             android:textSize="28dp"
-            android:textColor=""
+            android:textColor="@color/white"
             />
 
 

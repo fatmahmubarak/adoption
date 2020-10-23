@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">adoption</string>
+    <string name="app_name">تبنى</string>
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="registration_success">registration_success</string>

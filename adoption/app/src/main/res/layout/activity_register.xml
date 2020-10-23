@@ -9,10 +9,10 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView3"
-        android:layout_width="272dp"
-        android:layout_height="318dp"
+        android:layout_width="371dp"
+        android:layout_height="326dp"
         android:layout_marginBottom="416dp"
-        android:src="@drawable/login"
+        android:src="@drawable/user2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

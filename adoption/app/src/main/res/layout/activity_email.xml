@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".Email">
+    tools:context=".Email"
+    android:background="#e8ffff"
+    >
 
 
     <TextView
@@ -15,59 +17,67 @@
         android:layout_height="wrap_content"
         android:paddingRight="20dp"
         android:text=" الى :"
+        android:layout_marginBottom="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/edit_text_to"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        android:fontFamily="@font/decotype_thuluth"
+        />
 
 
     <EditText
         android:id="@+id/edit_text_to"
-        android:layout_width="376dp"
+        android:layout_width="340dp"
         android:layout_height="48dp"
+        android:background="@drawable/btnlogin1"
         android:ems="10"
         android:hint=" ايميل صاحب الحيوان"
         android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374"
-        android:paddingLeft="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        />
+        app:layout_constraintVertical_bias="0.377" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" عنوان ايميلك :"
+        android:text=" عنوان رسالتك :"
+        android:layout_margin="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#0E0E0E"
         app:layout_constraintBottom_toTopOf="@+id/edit_text_subject"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_to"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="19dp" />
+        tools:layout_editor_absoluteX="19dp"
+        android:fontFamily="@font/decotype_thuluth"
+        />
 
     <EditText
         android:id="@+id/edit_text_subject"
-        android:layout_width="377dp"
+        android:layout_width="340dp"
         android:layout_height="45dp"
+        android:background="@drawable/btnlogin1"
         android:ems="10"
-        android:hint="ايميلك"
+        android:hint="عنوان رسالتك"
         android:inputType="textEmailSubject"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:paddingLeft="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        />
+        app:layout_constraintVertical_bias="0.526" />
 
     <TextView
         android:id="@+id/textView7"
@@ -75,54 +85,60 @@
         android:layout_height="wrap_content"
         android:paddingRight="20dp"
         android:text=" رسالتك :"
+        android:layout_margin="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/edit_text_message"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_subject"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="19dp"
+        android:fontFamily="@font/decotype_thuluth"
         />
 
     <EditText
         android:id="@+id/edit_text_message"
-        android:layout_width="382dp"
+        android:layout_width="340dp"
         android:layout_height="172dp"
+        android:background="@drawable/btnlogin1"
         android:ems="10"
         android:gravity="start|top"
         android:hint="ايميلك"
         android:lines="10"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
         android:paddingRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762"
-        android:paddingLeft="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        />
+        app:layout_constraintVertical_bias="0.835" />
 
     <Button
         android:id="@+id/button_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:text="ارسال"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/btnlogin"
+        android:fontFamily="@font/decotype_thuluth"
+        android:text="ارسال"
+        android:textColor="@color/white"
         android:textSize="23dp"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView2"
-        android:layout_width="339dp"
-        android:layout_height="197dp"
+        android:layout_width="370dp"
+        android:layout_height="282dp"
         android:scaleType="fitXY"
-        android:src="@drawable/email"
+        android:src="@drawable/email3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-30dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
