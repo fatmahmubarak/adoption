@@ -3,17 +3,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Fragrnents.workFragment">
 
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/wordTxt"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Text View"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:textColor="@color/blackColor"-->
+    <!--        android:textSize="28sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        />-->
+
+
+    <ImageView
+        android:id="@+id/imageVIewAdd"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_mage" />
+
+    <EditText
+        android:id="@+id/inputImageName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageVIewAdd"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Name animal" />
+
+    <EditText
+        android:id="@+id/inputage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/inputImageName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="30dp"
+        android:hint="age animal" />
+
+    <EditText
+        android:id="@+id/coloranimal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/inputage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-53dp"
+        android:hint="color animal" />
+
+    <EditText
+        android:id="@+id/animal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/inputage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-53dp"
+        android:hint="color animal" />
+
+
     <TextView
+        android:id="@+id/textViewProgress"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/coloranimal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-50dp"
+        android:gravity="center"
+        android:text="0.0%"
+        android:textSize="25dp" />
+
+
+
+    <Button
+        android:id="@+id/btnUpload"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/wordTxt"
-        android:gravity="center"
-        android:text="Text View"
-        android:layout_centerInParent="true"
-        android:textColor="@color/blackColor"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="153dp"
+        android:text="Upload" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewProgress"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="49dp" />
+
 </RelativeLayout>

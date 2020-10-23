@@ -2,15 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="180dp"
-    android:layout_height="200dp"
+    android:layout_height="230dp"
     android:background="@drawable/adapter"
     android:orientation="vertical"
     android:layout_marginTop="10dp"
-    android:layout_marginLeft="30dp"
-    android:layout_marginRight="30dp"
     android:gravity="center"
-
-
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="10dp"
+   android:elevation="20dp"
     >
 
 <!--        <ImageView-->
@@ -37,7 +37,7 @@
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:src="@drawable/animal"
-        app:civ_border_color="#87431d"
+        app:civ_border_color="#7579e7"
         app:civ_border_width="1dp" />
 
     <TextView
@@ -45,26 +45,27 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView_single_view"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="-5dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/decotype_thuluth"
         android:gravity="center"
         android:text="الاسم:"
         android:textColor="@color/whiteColor"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView_single_view"
-        android:layout_width="232dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/decotype_thuluth"
         android:gravity="center"
         android:text="name animal"
         android:textColor="@color/whiteColor"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold" />
 
 

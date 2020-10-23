@@ -1,19 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragrnents.HomeFragment">
+    tools:context=".Fragrnents.HomeFragment"
+    android:background="#9ab3f5"
+    >
 
-    <TextView
+<!--<androidx.viewpager2.widget.ViewPager2-->
+<!--    android:id="@+id/viewPagerImageSlider"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="160dp"-->
+<!--    android:paddingStart="80dp"-->
+<!--    android:paddingEnd="80dp"-->
+<!--    android:layout_marginTop="60dp"-->
+<!--    />-->
+
+    <EditText
+        android:id="@+id/inputSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/HomeTxt"
-        android:gravity="center"
-        android:text="Text View"
-        android:layout_centerInParent="true"
-        android:textColor="@color/blackColor"
-        android:textSize="28sp"
-        android:textStyle="bold"
+        android:hint="ابحث عن النوع...."
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="60dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:paddingRight="20dp"
+        android:background="@drawable/input_search"
+        android:fontFamily="@font/decotype_thuluth"
         />
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recylerView"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="180dp"-->
+<!--        android:gravity="center"-->
+<!--        android:numColumns="auto_fit"-->
+<!--     />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="572dp"
+        android:layout_below="@+id/inputSearch"
+        android:layout_marginTop="104dp"
+        android:animation="@anim/fade_transition_animation"
+        android:background="@drawable/adapterhomepage"
+        android:padding="10dp"
+        android:paddingBottom="0dp"
+
+        />
+<!--        android:layout_marginVertical="@dimen/activity_horizontal_margin"-->
+<!--        android:layout_margin="10dp"-->
+<!--        />-->
+
+
+
+
+
+
+
+<!--    <GridView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/inputSearch"-->
+<!--        android:id="@+id/recylerView"-->
+<!--        android:numColumns="auto_fit"-->
+<!--        />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="#a3d8f4"
+        android:src="@drawable/ic_action_work"
+        app:backgroundTint="#b9fffc" />
 </RelativeLayout>

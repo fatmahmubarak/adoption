@@ -2,8 +2,10 @@ package com.example.adoption;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -13,10 +15,15 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.adoption.Fragrnents.HomeFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class Login extends AppCompatActivity {
    EditText mEmail,mPassword;
@@ -24,6 +31,8 @@ public class Login extends AppCompatActivity {
    TextView mCreateBnt;
    ProgressBar progressBar;
    FirebaseAuth fAuth;
+
+   DatabaseReference Datausers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +45,7 @@ public class Login extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         mLoginBtn = findViewById(R.id.loginBtn);
         mCreateBnt = findViewById(R.id.createText);
+        Datausers = FirebaseDatabase.getInstance().getReference().child("users");
 
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +86,13 @@ public class Login extends AppCompatActivity {
                     }
                 }); //end oncomplete
 
+
+//                final String user = mEmail.getText().toString();
+//                if (user != null){
+//                    users(user);
+//                }
+
+
             }
         });
 
@@ -85,9 +102,35 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),Register.class));
+//                Intent intent = new Intent(Login.this,Register.class);
+//                startActivity(intent);
             }
         });
 
 
+
     }
+
+//    public class User {
+//
+//        public String username;
+//        public String email;
+//
+//        public User() {
+//            // Default constructor required for calls to DataSnapshot.getValue(User.class)
+//        }
+//
+//        public User(String username, String email) {
+//            this.username = username;
+//            this.email = email;
+//        }
+//
+//    }
+//
+//    private void writeNewUser(String userId, String name, String email) {
+//        User user = new User(name, email);
+//
+//        Datausers.child("users").child(userId).setValue(user);
+//    }
+
 }

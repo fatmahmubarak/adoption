@@ -1,59 +1,40 @@
 package com.example.adoption;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
+public class Tips {
+    private String Tips;
+    private int image;
+    private String name;
 
-import android.os.Bundle;
-import android.view.View;
 
-public class Tips extends AppCompatActivity {
-//Initialize variable
-    DrawerLayout drawerLayout;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tips);
-
-        //Assign variable
-        drawerLayout = findViewById(R.id.drawer_layout);
+    public Tips(String tips, int image, String name ) {
+        Tips = tips;
+        this.image = image;
+        this.name = name;
     }
 
-    public void ClickMenu(View view){
-        //open drawer
-        Homepage.openDrawer(drawerLayout);
+    public String getTips() {
+        return Tips;
     }
 
-    public void Clicklogo(View view){
-        //Close drawer
-        Homepage.closeDrawer(drawerLayout);
+    public void setTips(String tips) {
+        Tips = tips;
     }
 
-    public void ClickHome(View view){
-        //Redirect activity to home
-        Homepage.redirectActivity(this,Homepage.class);
+    public int getImage() {
+        return image;
     }
 
-    public void ClickDashboard(View view){
-        //Recreate activity
-        recreate();
+    public void setImage(int image) {
+        this.image = image;
     }
 
-    public void ClickAboutUs(View view){
-        //redirect activity to about us
-        Homepage.redirectActivity(this,hospital.class);
+    public String getName() {
+        return name;
     }
 
-    public void ClickLogout(View view){
-        //Close app
-        Homepage.logout(this);
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        //Close drawer
-        Homepage.closeDrawer(drawerLayout);
 
-    }
 }

@@ -3,39 +3,41 @@
 
     <group android:checkableBehavior="single">
 
-        <item
-            android:id="@+id/home"
-            android:title="Home"
-            android:icon="@drawable/ic_action_home"
-           />
+
 
         <item
-            android:id="@+id/work"
-            android:title="work"
-            android:icon="@drawable/ic_action_work"
-            />
+            android:id="@+id/home"
+            android:title="الصفحه الرئيسية"
+            android:icon="@drawable/home"
+           />
+
+<!--        <item-->
+<!--            android:id="@+id/work"-->
+<!--            android:title="كيفيه التعامل مع حيوانك الاليف"-->
+<!--            android:icon="@drawable/ic_action_work"-->
+<!--            />-->
 
         <item
             android:id="@+id/school"
-            android:title="school"
-            android:icon="@drawable/ic_action_hospital"
+            android:title="عيادات بيطرية"
+            android:icon="@drawable/veterinary1"
             />
 
-         <item android:title="More">
-             <menu>
+<!--         <item android:title="More">-->
+<!--             <menu>-->
                  <item
                      android:id="@+id/Call"
-                     android:title="call"
-                     android:icon="@drawable/ic_action_call"/>
+                     android:title="كيفيه التعامل مع حيوانك الاليف"
+                     android:icon="@drawable/ic_call2"/>
 
 
-                 <item
-                     android:id="@+id/Setting"
-                     android:title="setting"
-                     android:icon="@drawable/ic_action_setting"/>
+<!--                 <item-->
+<!--                     android:id="@+id/Setting"-->
+<!--                     android:title="setting"-->
+<!--                     android:icon="@drawable/ic_action_setting"/>-->
 
-             </menu>
-         </item>
+<!--             </menu>-->
+<!--         </item>-->
 
 
     </group>

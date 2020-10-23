@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragrnents.CallFragment">
+    android:orientation="vertical"
+    tools:context=".Fragrnents.ClinicsFragment"
+    android:background="#9ab3f5"
+    >
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/CallTxt"
-    android:gravity="center"
-    android:text="Text View"
-    android:layout_centerInParent="true"
-    android:textColor="@color/blackColor"
-    android:textSize="28sp"
-    android:textStyle="bold"
-    />
-
-</RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recylerView"
+        />
+</LinearLayout>
